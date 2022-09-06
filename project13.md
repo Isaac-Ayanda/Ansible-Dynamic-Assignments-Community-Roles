@@ -29,7 +29,7 @@ pushed-git.png
 ![update site.yml](./images/pushed-git.png)
 
 2. Create a role for MySQL database – it should install the MySQL package, create a database and configure users. Download Mysql Ansible Role from the community. Here, a MySQL role developed by geerlingguy is used. To preserve the GitHub in actual state after installing the new role – make a commit and push to master directory - ‘ansible-config-mgt’. 
-- On Jenkins-Ansible server make sure that git is installed and check the version with git --version, then go to ‘ansible-config-mgt’ directory and 
+- On Jenkins-Ansible server make sure that git is installed and check the version with git --version, then go to ‘ansible-config-mgt’ directory - 
 
 - Run `git init`
 - Run `git pull https://github.com/<(your-name)>/ansible-config-mgt.git`
@@ -49,7 +49,6 @@ pushed-git.png
 ![new MysQL role](./images/install-mysql.png)
 ![new apache and nginx](./images/installed-nginx-apache.png)
 
-eval-dev.png loadbalancer
 
 3. Read README.md files in the roles to edit the configuration to use correct credentials for MySQL required for the tooling website.
 
