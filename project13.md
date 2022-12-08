@@ -66,14 +66,14 @@ pushed-git.png
 
 Third Step: Load Balancer roles
 
-1. In nginxRole/defaults/main.yml declare variables - enable_nginx_lb: false same in apacheRole/detaults/main.yml
+1. In nginxRole/defaults/main.yml declare variables - enable_nginx_lb: false.
 
 ![declare nginx role](./images/default-nginx.png)
+
+
+- Declare another variable in apacheroles/defaults/main.yml. loadbalancer_is_required and set its value to false as well.
+
 ![declare apache role](./images/default-apache.png)
-
-- Declare another variable in apacheroles/defaults/main.yml. Load_balancer_is_required and set its value to false as well.
-
-![load_balancer variable](./images/apache-main.yml.png)
 
 
 2. Update static-assignments/loadbalancers.yml and playbooks/site.yml files respectively.
